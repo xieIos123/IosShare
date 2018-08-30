@@ -269,21 +269,6 @@
     messageObject.text = [NSString stringWithFormat:@"%@ %@ %@", title,contentS,appUrl];
     
     
-    
-    /*
-     WBWebpageObject *webObject = [WBWebpageObject object];
-     // 不能为空，否则会失败
-     webObject.webpageUrl = appUrl;
-     webObject.objectID = @"123456";
-     //title 不能为空
-     webObject.title = title;
-     webObject.description = content;
-     //缩略图
-     webObject.thumbnailData = UIImageJPEGRepresentation(image2, 1.0);
-     messageObject.mediaObject = webObject;
-     */
-    
-    
     WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:messageObject authInfo:wbRequest access_token:nil];
     //[WeiboSDK sendRequest:request];
     
@@ -356,9 +341,7 @@
 - (void)shareSuccssWithQQCode:(NSString *)code {
     
     if (code == 0) {
-        //    UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"警告" message:@"分享成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        // [aler show];
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"alertLoginSuccess" object:@"分享成功"];
+       
         [self _shareResultWithLottery];
     }else{
         UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"提示" message:@"分享失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -368,9 +351,7 @@
 
 
 -(void)shareSuccessWithWeiboCode:(NSInteger)code{
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"alertLoginSuccess" object:@"分享成功"];
-    
-    
+   
     [self _shareResultWithLottery];
 }
 
@@ -414,23 +395,16 @@
 }
 
 - (void)loginSuccessByCode:(NSString *)code {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"alertLoginSuccess" object:@"分享成功"];
-    
-    
     [self _shareResultWithLottery];
 }
 
 - (void)shareSuccessWithWeixinCode:(NSInteger)code {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"alertLoginSuccess" object:@"分享成功"];
-    
     
     [self _shareResultWithLottery];
 }
 
 -(void)shareSuccess:(NSInteger)code{
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"alertLoginSuccess" object:@"分享成功"];
-    
-    
+   
     [self _shareResultWithLottery];
 }
 

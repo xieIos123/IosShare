@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ShareView.h"
-
+#import "ShareModel.h"
 @interface ViewController ()
 
 @end
@@ -32,7 +32,14 @@
 
 -(void)shareAction:(UIButton *)button{
     
+    ShareModel *model = [[ShareModel alloc]init];
+    model.shareTitle = [NSString stringWithFormat:@"hello world"];//分享标题
+    model.content = [NSString stringWithFormat:@"今天天气真好..."];//分享内容
+    model.url = [NSString stringWithFormat:@"https://www.baidu.com"];//分享链接
+    model.picturePath = [NSString stringWithFormat:@"https://www.baidu.com"];//图片地址
+    
     ShareView *shareView = [[ShareView alloc]initWithFrame:self.view.frame];
+    shareView.model = model;
     
     [self.view addSubview:shareView];
 }

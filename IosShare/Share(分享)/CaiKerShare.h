@@ -63,9 +63,10 @@ typedef enum : NSUInteger {
 
 @property(weak,nonatomic)id<CaiKersDelegate>delegate;
 
-
+//分享反馈
 -(void)showTheShareStatusMessage:(NSString *)message;
 
+//联系客服
 -(void)sendMessageWithQQNumber:(NSString *)qq;
 
 @end
