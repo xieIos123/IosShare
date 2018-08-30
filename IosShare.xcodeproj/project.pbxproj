@@ -40,6 +40,10 @@
 		A141571521369D61003549C0 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A141570F21369D61003549C0 /* ShareView.m */; };
 		A141571621369D61003549C0 /* CaiKerShare.m in Sources */ = {isa = PBXBuildFile; fileRef = A141571121369D61003549C0 /* CaiKerShare.m */; };
 		A141571721369D61003549C0 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A141571321369D61003549C0 /* ShareModel.m */; };
+		A162B87521378E0E00A68AB9 /* share_wechat_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A162B87121378E0E00A68AB9 /* share_wechat_icon@2x.png */; };
+		A162B87621378E0E00A68AB9 /* share_sina_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A162B87221378E0E00A68AB9 /* share_sina_icon@2x.png */; };
+		A162B87721378E0E00A68AB9 /* share_fre_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A162B87321378E0E00A68AB9 /* share_fre_icon@2x.png */; };
+		A162B87821378E0E00A68AB9 /* share_qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A162B87421378E0E00A68AB9 /* share_qq_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,10 @@
 		A141571221369D61003549C0 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
 		A141571321369D61003549C0 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
 		A141571421369D61003549C0 /* CaiKerShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaiKerShare.h; sourceTree = "<group>"; };
+		A162B87121378E0E00A68AB9 /* share_wechat_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_wechat_icon@2x.png"; sourceTree = "<group>"; };
+		A162B87221378E0E00A68AB9 /* share_sina_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_sina_icon@2x.png"; sourceTree = "<group>"; };
+		A162B87321378E0E00A68AB9 /* share_fre_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_fre_icon@2x.png"; sourceTree = "<group>"; };
+		A162B87421378E0E00A68AB9 /* share_qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_qq_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +187,7 @@
 		A14156A42136953B003549C0 /* IosShare */ = {
 			isa = PBXGroup;
 			children = (
+				A162B85F21378D5E00A68AB9 /* Image */,
 				A141570E21369D61003549C0 /* Share(分享) */,
 				A14156D7213695AA003549C0 /* Frames */,
 				A14156A52136953B003549C0 /* AppDelegate.h */,
@@ -291,6 +300,17 @@
 			path = "Share(分享)";
 			sourceTree = "<group>";
 		};
+		A162B85F21378D5E00A68AB9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A162B87321378E0E00A68AB9 /* share_fre_icon@2x.png */,
+				A162B87421378E0E00A68AB9 /* share_qq_icon@2x.png */,
+				A162B87221378E0E00A68AB9 /* share_sina_icon@2x.png */,
+				A162B87121378E0E00A68AB9 /* share_wechat_icon@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,11 +414,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A162B87621378E0E00A68AB9 /* share_sina_icon@2x.png in Resources */,
 				A14156ED213695AA003549C0 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				A162B87721378E0E00A68AB9 /* share_fre_icon@2x.png in Resources */,
 				A14156B22136953D003549C0 /* LaunchScreen.storyboard in Resources */,
 				A14156AF2136953D003549C0 /* Assets.xcassets in Resources */,
+				A162B87821378E0E00A68AB9 /* share_qq_icon@2x.png in Resources */,
 				A14156EB213695AA003549C0 /* WeiboSDK.bundle in Resources */,
 				A14156E9213695AA003549C0 /* README.txt in Resources */,
+				A162B87521378E0E00A68AB9 /* share_wechat_icon@2x.png in Resources */,
 				A14156AD2136953B003549C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

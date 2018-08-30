@@ -43,8 +43,7 @@
 }
 
 -(void)_creatView{
-    UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
-    
+   
     _remBlackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
     
     _remBlackView.backgroundColor = [[UIColor colorWithRed:53/255.0 green:53/255.0 blue:53/255.0 alpha:1]colorWithAlphaComponent:0.4f];
@@ -114,7 +113,7 @@
     [remV addSubview:sureLabel];
    // [remV addSubview:lineLabel];
     [_remBlackView addSubview:remV];
-    [currentWindow addSubview:_remBlackView];
+    [self addSubview:_remBlackView];
 }
 
 -(void)_closeviewSucess:(UIButton *)btn{
